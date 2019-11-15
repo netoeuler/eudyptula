@@ -1,0 +1,11 @@
+--- Makefile_original	2019-11-15 18:09:11.115633983 -0500
++++ ../task2/linux-5.0/Makefile	2019-11-15 16:58:49.305490266 -0500
+@@ -2,7 +2,7 @@
+ VERSION = 5
+ PATCHLEVEL = 0
+ SUBLEVEL = 0
+-EXTRAVERSION =
++EXTRAVERSION = -eudyptula
+ NAME = Shy Crocodile
+ 
+ # *DOCUMENTATION*
