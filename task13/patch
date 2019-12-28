@@ -1,0 +1,33 @@
+20,21d19
+< static struct kmem_cache *identity_cache;
+< 
+40a39
+> 		//goto out;
+44a44
+> 		//goto out;
+54a55
+> //out:	return retval;
+55a57
+> 
+70,71c72
+< 	//kfree(temp);
+< 	kmem_cache_free(identity_cache, temp);
+---
+> 	kfree(temp);
+80,85c81
+< 	pr_debug("Hello Task 13!\n");
+< 
+< 	identity_cache = kmem_cache_create("identity", sizeof(struct identity), 0, 0, NULL);
+< 
+< 	if (!identity_cache)
+< 		return -ENOMEM;
+---
+> 	pr_debug("Hello Task 12!\n");
+115,117d110
+< 
+< 	if (identity_cache)
+< 		kmem_cache_destroy(identity_cache);
+125c118
+< MODULE_DESCRIPTION("Task13 module");
+---
+> MODULE_DESCRIPTION("Task12 module");
